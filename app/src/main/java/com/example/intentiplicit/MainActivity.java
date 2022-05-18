@@ -116,8 +116,7 @@ private final int PHONE_CODE=100;
                 if(permiso.equals(Manifest.permission.CALL_PHONE));
                 if(valorPermiso==PackageManager.PERMISSION_GRANTED){
                     Intent intentLlamada=new Intent(Intent.ACTION_CALL,Uri.parse("tel:"+numeroTelefono));
-                    startActivity(intentLlamada);
-                }
+                    startActivity(intentLlamada);                }
                 break;
             default:
                 super.onRequestPermissionsResult(requestCode, permissions, grantResults);
